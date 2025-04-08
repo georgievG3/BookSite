@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -34,7 +36,7 @@
             <div class="book-container">
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/01.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/01.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -46,7 +48,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/02.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/02.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -58,7 +60,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/03.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/03.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -70,7 +72,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/04.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/04.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -82,7 +84,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/05.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/05.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -94,7 +96,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/06.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/06.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -106,7 +108,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/07.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/07.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -118,7 +120,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/08.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/08.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -130,7 +132,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/09.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/09.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -142,7 +144,7 @@
                 </div>
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="book_covers/top-10-books/10.jpg" class = "book-thumb" alt="">
+                        <img src="{% static 'images/book_covers/top-10-books/10.jpg' %}" class = "book-thumb" alt="">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
@@ -157,6 +159,6 @@
     <footer>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

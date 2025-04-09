@@ -34,126 +34,20 @@
             <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
             <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="book-container">
+                {% for book in books %}
                 <div class="book-card">
                     <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/01.jpg' %}" class = "book-thumb" alt="">
+                        <img src="{{ book.cover_image.url }}" class = "book-thumb" alt="{{ book.title }}">
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
                         <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
+                            {{ book.title }} by {{ book.author }}
                         </h2>
-                        <span class="rating"></span>
+                        <span class="{{ book.rating }}"></span>
                     </div>
                 </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/02.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/03.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/04.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/05.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/06.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/07.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/08.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/09.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
-                <div class="book-card">
-                    <div class="book-img">
-                        <img src="{% static 'images/book_covers/top-10-books/10.jpg' %}" class = "book-thumb" alt="">
-                        <button class="add-like">Add to liked</button>
-                    </div>
-                    <div class="book-info">
-                        <h2 class="book-title">
-                            The Great Gatsby by F. Scott Fitzgerald
-                        </h2>
-                        <span class="rating"></span>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
     <footer>

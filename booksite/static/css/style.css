@@ -90,6 +90,7 @@ nav button{
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 .book-container::-webkit-scrollbar{

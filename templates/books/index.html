@@ -41,10 +41,31 @@
                         <button class="add-like">Add to liked</button>
                     </div>
                     <div class="book-info">
+                        <span class="rating"><i class="fa-solid fa-star"></i>{{ book.rating }}</span>
                         <h2 class="book-title">
                             {{ book.title }} by {{ book.author }}
                         </h2>
-                        <span class="{{ book.rating }}"></span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="book">
+            <h2 class="book-category">TOP <span>10</span> CRIME BOOKS</h2>
+            <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="book-container">
+                {% for book in crime_books %}
+                <div class="book-card">
+                    <div class="book-img">
+                        <img src="{{ book.cover_image.url }}" class = "book-thumb" alt="{{ book.title }}">
+                        <button class="add-like">Add to liked</button>
+                    </div>
+                    <div class="book-info">
+                        <span class="rating"><i class="fa-solid fa-star"></i>{{ book.rating }}</span>
+                        <h2 class="book-title">
+                            {{ book.title }} by {{ book.author }}
+                        </h2>
                     </div>
                 </div>
                 {% endfor %}

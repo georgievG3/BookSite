@@ -15,3 +15,19 @@ bookContainers.forEach((item, i) => {
     })
 
 })
+
+document.querySelectorAll('.show-info-btn').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const bookCard = e.target.closest('.book-card');
+    const info = bookCard.querySelector('.book-info');
+    info.classList.remove('hidden'); // show it
+  });
+});
+
+document.querySelectorAll('.close-btn').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const bookCard = e.target.closest('.book-card');
+    const info = bookCard.querySelector('.book-info');
+    info.classList.add('hidden');
+  });
+});

@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97bab0e-55c2-44c5-ba34-9a0902c158d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bff031b-6067-4e46-92aa-43c6285b436e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bff031b-6067-4e46-92aa-43c6285b436e/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bff031b-6067-4e46-92aa-43c6285b436e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bff031b-6067-4e46-92aa-43c6285b436e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bff031b-6067-4e46-92aa-43c6285b436e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booksite/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/booksite/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/add_book.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="a97bab0e-55c2-44c5-ba34-9a0902c158d8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +132,7 @@
       <workItem from="1744220845982" duration="242000" />
       <workItem from="1744221106784" duration="133000" />
       <workItem from="1744221255211" duration="3997000" />
-      <workItem from="1744305661954" duration="3390000" />
+      <workItem from="1744305661954" duration="3631000" />
     </task>
     <servers />
   </component>

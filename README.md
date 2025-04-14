@@ -8,7 +8,7 @@ My first major project where I apply everything I've learned while studying Soft
 ## 🚀 Functionalities
 - ✅ Working slideshow
 - 🔜 Good design *(coming soon...)*
-- 🔜 Search bar *(coming soon...)*
+- ✅ Working search bar
 - 🔜 Like buttons *(coming soon...)*
 - 🔜 Add comments under each book *(coming soon...)*
 - 🔜 User registration and login *(coming soon...)*

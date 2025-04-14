@@ -12,11 +12,13 @@
 <body>
     <header>
         <div class="logo">
-            <p>Book<span>Site</span></p>
+            <a href="{% url 'book_list' %}">Book<span>Site</span></a>
         </div>
-        <div class="search-field">
-            <input type="search" name="search-field" id="search-field" placeholder="Search...">
-        </div>
+        <form class="search-field" method=POST action="{% url 'search-results' %}">
+            {% csrf_token %}
+            <input type="search" id="search-field" placeholder="Search..." name="searched">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
         <nav>
             <div class="nav-btn-one">
                 <button class = 'liked-books'><i class="fa-regular fa-heart"></i></button>
@@ -29,6 +31,8 @@
         </nav>
     </header>
     <hr>
+    <main>
+
         <section class="book">
             <h2 class="book-category">TOP <span>10</span> BOOKS</h2>
             <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
@@ -37,12 +41,14 @@
                 {% for book in books %}
                 <div class="book-card">
                     <div class="book-info hidden">
-                        <button class="close-btn"></button>
-                        <img src="{{ book.cover_image.url }}">
+                        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="book-info-image">
+                            <img src="{{ book.cover_image.url }}">
+                            <span>Rating: {{ book.rating }}</span>
+                        </div>
                         <div class="book-info-container">
-                            <h3>{{ book.title }} by {{ book.author }}</h3>
+                            <h3>{{ book.name }} by {{ book.author }}</h3>
                             <p>{{ book.description }}</p>
-                            <span>{{ book.rating }}</span>
                         </div>
                     </div>
                     <div class="book-img">
@@ -51,7 +57,7 @@
                         <button class="add-like">Add to liked</button>
                     </div>
                     <h2 class="book-title">
-                        {{ book.title }} by {{ book.author }}
+                        {{ book.name }} by {{ book.author }}
                     </h2>
                 </div>
                 {% endfor %}
@@ -65,8 +71,15 @@
                 {% for book in crime_books %}
                 <div class="book-card">
                     <div class="book-info hidden">
-                        <button class="close-btn"></button>
-                        <img src="{{ book.cover_image.url }}" alt="">
+                        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="book-info-image">
+                            <img src="{{ book.cover_image.url }}">
+                            <span>Rating: {{ book.rating }}</span>
+                        </div>
+                        <div class="book-info-container">
+                            <h3>{{ book.name }} by {{ book.author }}</h3>
+                            <p>{{ book.description }}</p>
+                        </div>
                     </div>
                     <div class="book-img">
                         <button class="show-info-btn"><i class="fa-solid fa-info"></i></button>
@@ -74,7 +87,7 @@
                         <button class="add-like">Add to liked</button>
                     </div>
                     <h2 class="book-title">
-                        {{ book.title }} by {{ book.author }}
+                        {{ book.name }} by {{ book.author }}
                     </h2>
                 </div>
                 {% endfor %}
@@ -88,8 +101,15 @@
                 {% for book in fantasy_books %}
                 <div class="book-card">
                     <div class="book-info hidden">
-                        <button class="close-btn"></button>
-                        <img src="{{ book.cover_image.url }}" alt="">
+                        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="book-info-image">
+                            <img src="{{ book.cover_image.url }}">
+                            <span>Rating: {{ book.rating }}</span>
+                        </div>
+                        <div class="book-info-container">
+                            <h3 class="book-info-title">{{ book.name }} by {{ book.author }}</h3>
+                            <p>{{ book.description }}</p>
+                        </div>
                     </div>
                     <div class="book-img">
                         <button class="show-info-btn"><i class="fa-solid fa-info"></i></button>
@@ -97,12 +117,13 @@
                         <button class="add-like">Add to liked</button>
                     </div>
                     <h2 class="book-title">
-                        {{ book.title }} by {{ book.author }}
+                        {{ book.name }} by {{ book.author }}
                     </h2>
                 </div>
                 {% endfor %}
             </div>
         </section>
+    </main>
     <footer>
 
     </footer>

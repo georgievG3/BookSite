@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Site</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/searched.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{% url 'book_list' %}">Book<span>Site</span></a>
+        </div>
+        <form class="search-field" method=POST action="{% url 'search-results' %}">
+            {% csrf_token %}
+            <input type="search" id="search-field" placeholder="Search..." name="searched">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
+        <nav>
+            <div class="nav-btn-one">
+                <button class = 'liked-books'><i class="fa-regular fa-heart"></i></button>
+                <hr class = 'nav-btns-line'>
+            </div>
+            <div class="nav-btn-two">
+                <button class="user"><i class="fa-regular fa-user"></i></button>
+                <hr class = 'nav-btns-line'>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        {% block content %}
+            {% if searched %}
+                <h1 class="search-results-title">You searched for: "{{ searched }}"</h1>
+                {% for book in books_results %}
+                    {{ book }}
+                {% endfor %}
+            {% else %}
+                <h1>You forgot to search for a book!</h1>
+            {% endif %}
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

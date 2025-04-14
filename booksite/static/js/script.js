@@ -20,7 +20,7 @@ document.querySelectorAll('.show-info-btn').forEach(button => {
   button.addEventListener('click', (e) => {
     const bookCard = e.target.closest('.book-card');
     const info = bookCard.querySelector('.book-info');
-    info.classList.remove('hidden'); // show it
+    info.classList.remove('hidden');
   });
 });
 
@@ -31,3 +31,4 @@ document.querySelectorAll('.close-btn').forEach(button => {
     info.classList.add('hidden');
   });
 });
+

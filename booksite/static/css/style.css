@@ -23,13 +23,18 @@ header{
     font-weight: bold;
 }
 
+.logo a{
+    text-decoration: none;
+    color: inherit;
+}
+
 #search-field{
     width: 500px;
     height: 36px;
     border: 1px solid gray;
     text-decoration: none;
-    border-radius: 50px;
     outline: none;
+    border-radius: 7px;
     padding: 10px;
     font-size: 16px;
 }
@@ -45,6 +50,21 @@ nav button{
     background: none;
     font-size: 25px;
     color:	rgb(210, 4, 45);
+}
+
+.search-btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(210, 4, 45);
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.search-btn:hover{
+    background-color: rgb(186, 2, 38);
 }
 
 .nav-btn-one,
@@ -186,22 +206,63 @@ nav button{
     height: 700px;
     bottom: 15%;
     left: 13%;
-    background-color: black;
+    background-color: #000000;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-info-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-info-image img{
+    width: 350px;
+    height: 500px;
+}
+
+.book-info-image span{
+    color: white;
+    font-size: 20px;
 }
 
 .book-info-container{
     color: white;
+    width: 600px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.book-info img{
+.book-info-container h3{
+    font-size: 36px;
+    text-align: center;
+}
 
+.book-info-container p{
+    font-size: 20px;
+    text-align: justify;
 }
 
 .close-btn{
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: black;
+    cursor: pointer;
 }
 
 .hidden {

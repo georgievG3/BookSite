@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 94px;    
+    height: 94px;
 }
 
 .logo{
@@ -32,11 +35,18 @@ header{
     width: 500px;
     height: 36px;
     border: 1px solid gray;
+    border-right: 0;
     text-decoration: none;
     outline: none;
-    border-radius: 7px;
+    border-radius: 7px 0 0 7px;
     padding: 10px;
     font-size: 16px;
+}
+
+.search-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav{
@@ -59,8 +69,8 @@ nav button{
     padding: 10px;
     background-color: rgb(210, 4, 45);
     color: white;
-    border-radius: 7px;
-    font-size: 14px;
+    border-radius: 0 7px 7px 0;
+    height: 36px;
 }
 
 .search-btn:hover{
@@ -120,7 +130,7 @@ nav button{
 .book-card{
     flex: 0 0 auto;
     width: 250px;
-    height: 445px;
+    height: 450px;
     margin-right: 40px;
     padding: 7px;
 }
@@ -143,6 +153,9 @@ nav button{
 }
 
 .show-info-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -196,8 +209,7 @@ nav button{
     text-transform: uppercase;
     font-size: 18px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10px;
+    margin-top: 5px;
 }
 
 .book-info{

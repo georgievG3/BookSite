@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.shortcuts import render
 from books.models import Book
-from django.http import JsonResponse
+from django.http import HttpResponse
 
 # Create your views here.
 def book_list(request):
@@ -22,3 +22,12 @@ def search_results(request):
         return render(request, 'books/search-results.html', {'searched': searched, "books_results": books_results})
     else:
         return render(request, 'books/search-results.html', {})
+
+def register(request):
+    return  render(request, 'books/register.html')
+
+def my_login(request):
+    return  render(request, 'books/my-login.html')
+
+def dashboard(request):
+    return render(request, 'books/dashboard.html')

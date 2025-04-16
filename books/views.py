@@ -1,8 +1,10 @@
 from django.db.models import Q
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from books.models import Book
-from django.http import HttpResponse
-
+from . forms import CreateUserForm, LoginForm
+from django.contrib.auth.models import auth
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 def book_list(request):
     books = Book.objects.filter(genre__name='Best Books')
@@ -24,10 +26,54 @@ def search_results(request):
         return render(request, 'books/search-results.html', {})
 
 def register(request):
-    return  render(request, 'books/register.html')
+
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+
+        form = CreateUserForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+
+            return redirect("my-login")
+
+    context = {'registerform': form}
+
+    return  render(request, 'books/register.html', context = context)
+
+
 
 def my_login(request):
-    return  render(request, 'books/my-login.html')
 
+    form = LoginForm()
+
+    if request.method == 'POST':
+
+        form = LoginForm(request, data=request.POST)
+
+        if form.is_valid():
+
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+
+            user = authenticate(request, username=username, password=password)
+
+            if user is not None:
+                auth.login(request, user)
+
+                return redirect("dashboard")
+
+    context = {'loginform': form}
+
+    return  render(request, 'books/my-login.html', context=context)
+
+@login_required(login_url="my-login")
 def dashboard(request):
     return render(request, 'books/dashboard.html')
+
+def user_logout(request):
+    auth.logout(request)
+
+    return redirect('book_list')

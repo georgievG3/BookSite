@@ -6,5 +6,16 @@
 </head>
 <body>
     <h1>Register Now!</h1>
+
+    <form method="POST" autocomplete="off">
+
+        {% csrf_token %}
+
+        {{ registerform.as_p }}
+
+        <input type="submit" value="Register"/>
+
+    </form>
+
 </body>
 </html>

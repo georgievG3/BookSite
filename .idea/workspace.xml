@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97bab0e-55c2-44c5-ba34-9a0902c158d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33344b9d-6b98-4866-98f9-73609d84999d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33344b9d-6b98-4866-98f9-73609d84999d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33344b9d-6b98-4866-98f9-73609d84999d/storage_v2/_src_/database/book_site_db.IGFYbw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33344b9d-6b98-4866-98f9-73609d84999d/storage_v2/_src_/database/book_site_db.IGFYbw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books/my-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/my-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/books/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -148,7 +142,8 @@
       <workItem from="1744544510788" duration="3783000" />
       <workItem from="1744648893234" duration="5805000" />
       <workItem from="1744731860725" duration="5962000" />
-      <workItem from="1744818934636" duration="3757000" />
+      <workItem from="1744818934636" duration="4189000" />
+      <workItem from="1745343511055" duration="2777000" />
     </task>
     <servers />
   </component>
@@ -160,7 +155,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/books/views.py</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

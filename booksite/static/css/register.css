@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    border: 1px solid black;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 15px;
+
+}
+
+h1{
+    margin: 50px 0 100px 0;
+    font-size: 42px;
+}
+h1 span{
+    color:	rgb(210, 4, 45);
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p label{
+    font-size: 22px;
+}
+
+input{
+    padding: 5px 5px 5px 7px;
+    width: 250px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    background-color: rgb(210, 4, 45);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(186, 2, 38);
+}
+
+#id_username_helptext{
+    display: none;
+}
+
+#id_password2_helptext{
+    display: none;
+}
+
+ul{
+    display: none;
+}
+
